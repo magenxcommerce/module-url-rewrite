@@ -1,0 +1,34 @@
+{
+    "name": "magenxcommerce/module-url-rewrite",
+    "description": "N/A",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "version": "101.1.5",
+    "require": {
+        "php": "~7.1.3||~7.2.0||~7.3.0",
+        "magenxcommerce/framework": "102.0.*",
+        "magenxcommerce/module-backend": "101.0.*",
+        "magenxcommerce/module-catalog": "103.0.*",
+        "magenxcommerce/module-catalog-url-rewrite": "100.3.*",
+        "magenxcommerce/module-cms": "103.0.*",
+        "magenxcommerce/module-cms-url-rewrite": "100.3.*",
+        "magenxcommerce/module-store": "101.0.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\UrlRewrite\\": ""
+        }
+    },
+    "replace": {
+        "magento/module-url-rewrite": "*"
+    }
+}
